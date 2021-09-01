@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  justify-content: center;
+  height: 25rem;
+}
+.links {
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: larger;
+  justify-content: center;
+  height: auto;
+}
