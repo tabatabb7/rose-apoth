@@ -4,12 +4,38 @@
 }
 #logo {
   justify-content: center;
-  height: 25rem;
+  height: auto;
+}
+.logoimg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: auto;
 }
 .links {
   display: flex;
   font-family: "Red Hat Display", sans-serif;
-  font-size: larger;
+  font-size: 36pt;
   justify-content: center;
   height: auto;
+  font-weight: bolder;
+  margin-top: 5%;
+}
+.links a:link {
+  color: black;
+  border-style: solid;
+  border-radius: 10em;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+}
+.links a:hover {
+  border-style: dotted;
+  border-color: black;
+}
+.links a:visited {
+  color: black;
+}
+.links img {
+  height: 45px;
 }
