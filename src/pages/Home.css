@@ -26,8 +26,10 @@
   color: black;
   border-style: solid;
   border-radius: 10em;
-  padding: 15px 15px 15px 15px;
+  padding: 25px 15px 25px 15px;
   text-decoration: none;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .links a:hover {
   border-style: dotted;

@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import logo from "./roseapothlogo.png";
 import basket from "./basket.png";
+import account from "./account.png";
+import shop from "./shop.png";
 
 function Home() {
   return (
@@ -11,13 +13,13 @@ function Home() {
       </a>
       <div className="links">
         <a href="/shop" className="link">
-          SHOP
+          <img src={shop} alt="shop"></img>
         </a>
 
         <a href="/account" className="link">
-          LOGIN/SIGNUP
+          <img src={account} alt="account"></img>
         </a>
-        <a href="basket" className="link">
+        <a href="/basket" className="link">
           <img src={basket} alt="basket"></img>
         </a>
       </div>
