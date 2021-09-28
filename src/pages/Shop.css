@@ -14,3 +14,12 @@
   padding-left: 10%;
   padding-top: 10%;
 }
+
+.description {
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: center;
+}
+
+.price {
+  font-family: "Red Hat Display", sans-serif;
+}

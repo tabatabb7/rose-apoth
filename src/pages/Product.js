@@ -1,13 +1,13 @@
 import React from "react";
-import "./Shop.css";
 import candle from "../images/candle.png";
 import perfume from "../images/perfume.png";
 import bodymilk from "../images/bodymilk.png";
+import { useParams } from "react-router";
 
 const product = [
   {
     id: 1,
-    imgURL: candle,
+    imgURL: "../images/candle.png",
     name: "Rose Candle",
     description:
       "A rosehip beeswax candle with hints of bergamot, sandalwood, and thyme. Bees sourced locally.",
@@ -15,7 +15,7 @@ const product = [
   },
   {
     id: 2,
-    imgURL: perfume,
+    imgURL: "../images/perfume.png",
     name: "Rose Perfume",
     description:
       "A subtle rosewater scent that compliments the wearer's natural musk",
@@ -23,29 +23,29 @@ const product = [
   },
   {
     id: 3,
-    imgURL: bodymilk,
+    imgURL: "../images/bodymilk.png",
     name: "Rose Bodymilk",
     description:
       "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
     price: "20.00",
   },
 ];
-function Shop() {
+
+function Product() {
+  const { id } = useParams();
+
   return (
-    <div id="productlisting">
-      <div className="row">
-        {product.map((product) => (
-          <div key={product.id} className="column">
-            <a href={`products/${product.id}`}>
-              <img src={`${product.imgURL}`} alt={`${product.name}`}></img>
-            </a>
-            <p className="description">{product.description}</p>
-            <p className="price">{product.price}</p>
+    <div className="productWrapper">
+      {product
+        .filter((product) => product.id === id)
+        .map((filterProduct) => (
+          <div key={filterProduct.id} className="productDiv">
+            <img src={filterProduct.imgURL} alt={filterProduct.name}></img>
+            <p className="description">{filterProduct.description}</p>
+            <p>{filterProduct.price}</p>
           </div>
         ))}
-      </div>
     </div>
   );
 }
-
-export default Shop;
+export default Product;

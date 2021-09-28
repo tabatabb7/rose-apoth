@@ -4,6 +4,7 @@ import Home from "./Home";
 import Shop from "./Shop";
 import Account from "./Account";
 import Basket from "./Basket";
+import Product from "./Product";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,6 +21,7 @@ function App() {
         <Route path="/shop" component={Shop} />
         <Route path="/account" component={Account} />
         <Route path="/basket" component={Basket} />
+        <Route path="/products/:id" component={Product} />
       </Router>
     </div>
   );

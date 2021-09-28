@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import logo from "./roseapothlogo.png";
-import basket from "./basket.png";
-import account from "./account.png";
-import shop from "./shop.png";
+import logo from "../images/roseapothlogo.png";
+import basket from "../images/basket.png";
+import account from "../images/account.png";
+import shop from "../images/shop.png";
 
 function Home() {
   return (
