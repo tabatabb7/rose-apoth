@@ -4,3 +4,6 @@
 .cartButton:hover {
   text-decoration-style: dotted;
 }
+img {
+  margin-top: 10%;
+}

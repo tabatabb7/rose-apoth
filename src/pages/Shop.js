@@ -26,6 +26,14 @@ const product = [
       "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
     price: "20.00",
   },
+  {
+    id: 4,
+    imgURL: "../images/bodymilk.png",
+    name: "Unscented Bodymilk",
+    description:
+      "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
+    price: "20.00",
+  },
 ];
 function Shop() {
   return (
@@ -36,6 +44,7 @@ function Shop() {
             <a href={`products/${product.id}`}>
               <img src={product.imgURL} alt={`${product.name}`}></img>
             </a>
+            <p className="name">{product.name}</p>
             <p className="description">{product.description}</p>
             <p className="price">{product.price}</p>
           </div>
