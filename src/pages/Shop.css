@@ -23,3 +23,10 @@
 .price {
   font-family: "Red Hat Display", sans-serif;
 }
+
+.cartButton {
+  cursor: pointer;
+}
+.cartButton:hover {
+  text-decoration-style: dotted;
+}

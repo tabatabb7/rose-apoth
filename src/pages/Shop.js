@@ -1,13 +1,10 @@
 import React from "react";
 import "./Shop.css";
-import candle from "../images/candle.png";
-import perfume from "../images/perfume.png";
-import bodymilk from "../images/bodymilk.png";
 
 const product = [
   {
     id: 1,
-    imgURL: candle,
+    imgURL: "../images/candle.png",
     name: "Rose Candle",
     description:
       "A rosehip beeswax candle with hints of bergamot, sandalwood, and thyme. Bees sourced locally.",
@@ -15,7 +12,7 @@ const product = [
   },
   {
     id: 2,
-    imgURL: perfume,
+    imgURL: "../images/perfume.png",
     name: "Rose Perfume",
     description:
       "A subtle rosewater scent that compliments the wearer's natural musk",
@@ -23,7 +20,7 @@ const product = [
   },
   {
     id: 3,
-    imgURL: bodymilk,
+    imgURL: "../images/bodymilk.png",
     name: "Rose Bodymilk",
     description:
       "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
@@ -37,7 +34,7 @@ function Shop() {
         {product.map((product) => (
           <div key={product.id} className="column">
             <a href={`products/${product.id}`}>
-              <img src={`${product.imgURL}`} alt={`${product.name}`}></img>
+              <img src={product.imgURL} alt={`${product.name}`}></img>
             </a>
             <p className="description">{product.description}</p>
             <p className="price">{product.price}</p>

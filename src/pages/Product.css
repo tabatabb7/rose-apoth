@@ -1,0 +1,6 @@
+.cartButton {
+  cursor: pointer;
+}
+.cartButton:hover {
+  text-decoration-style: dotted;
+}

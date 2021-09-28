@@ -1,7 +1,4 @@
-import React from "react";
-import candle from "../images/candle.png";
-import perfume from "../images/perfume.png";
-import bodymilk from "../images/bodymilk.png";
+import { React, useState, useEffect } from "react";
 import { useParams } from "react-router";
 
 const product = [
@@ -33,16 +30,24 @@ const product = [
 
 function Product() {
   const { id } = useParams();
-
+  const [shoppingCart, setShoppingCart] = useState({ cart: [] });
+  const addProduct = (id) => {
+    setShoppingCart(id);
+  };
   return (
     <div className="productWrapper">
       {product
-        .filter((product) => product.id === id)
+        .filter((product) => product.id === parseInt(id))
         .map((filterProduct) => (
           <div key={filterProduct.id} className="productDiv">
             <img src={filterProduct.imgURL} alt={filterProduct.name}></img>
-            <p className="description">{filterProduct.description}</p>
-            <p>{filterProduct.price}</p>
+            <div className="description">
+              <p className="description">{filterProduct.description}</p>
+              <p>{filterProduct.price}</p>
+              <p onClick={addProduct} className="cartButton">
+                Add to Cart
+              </p>
+            </div>
           </div>
         ))}
     </div>
