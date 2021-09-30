@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useParams } from "react-router";
+import "./Product.css";
 
 const product = [
   {
@@ -40,10 +41,12 @@ function Product() {
         .filter((product) => product.id === parseInt(id))
         .map((filterProduct) => (
           <div key={filterProduct.id} className="productDiv">
-            <img src={filterProduct.imgURL} alt={filterProduct.name}></img>
-            <div className="description">
+            <div className="flex imageDiv">
+              <img src={filterProduct.imgURL} alt={filterProduct.name}></img>
+            </div>
+            <div className="flex descriptionDiv">
               <p className="description">{filterProduct.description}</p>
-              <p>{filterProduct.price}</p>
+              <p className="price">{filterProduct.price}</p>
               <p onClick={addProduct} className="cartButton">
                 Add to Cart
               </p>

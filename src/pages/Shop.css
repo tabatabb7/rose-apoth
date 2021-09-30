@@ -3,24 +3,22 @@
 }
 .row {
   display: flex;
+  width: auto;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .column {
   flex: 20%;
   height: auto;
-  width: 1%;
   padding-top: 5%;
+  margin: auto;
 }
 .column a:link {
   height: auto;
-  width: 1px;
-  padding-left: 10%;
-  padding-top: 10%;
 }
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .description {
   font-family: "Red Hat Display", sans-serif;

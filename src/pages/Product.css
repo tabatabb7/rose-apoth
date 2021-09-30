@@ -1,9 +1,34 @@
 .cartButton {
   cursor: pointer;
+  justify-content: center;
 }
 .cartButton:hover {
   text-decoration-style: dotted;
 }
-img {
-  margin-top: 10%;
+.productDiv {
+  display: flex;
+  height: auto;
+  max-width: 40%;
+}
+.imageDiv {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.flex {
+  flex: 1;
+  margin-right: 10%;
+}
+.descriptionDiv {
+  position: absolute;
+  right: 5%;
+  margin: auto;
+  border-style: dotted;
+  border-color: black;
+  border: 1em;
+  margin-top: 5%;
+  max-width: 30%;
+  margin-right: 10%;
+}
+.price {
+  margin-top: 20%;
 }

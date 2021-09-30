@@ -9,7 +9,7 @@ const Product = db.define("product", {
       notEmpty: true,
     },
   },
-  origPrice: {
+  price: {
     type: Sequelize.INTEGER,
     allowNull: false,
     validate: {
@@ -17,36 +17,14 @@ const Product = db.define("product", {
       min: 0,
     },
   },
-  resellPrice: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-      min: 0,
-    },
-  },
+
   description: {
     type: Sequelize.TEXT,
   },
-  image: {
+  imageURL: {
     type: Sequelize.TEXT,
     allowNull: false,
     defaultValue: "/images/default-product.png",
-    validate: {
-      notEmpty: true,
-    },
-  },
-  rating: {
-    type: Sequelize.FLOAT,
-    validate: {
-      min: 0,
-      max: 5,
-    },
-  },
-  stock: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-    defaultValue: 0,
     validate: {
       notEmpty: true,
     },

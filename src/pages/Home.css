@@ -6,6 +6,7 @@
 #logo {
   justify-content: center;
   height: auto;
+  width: auto;
 }
 .logoimg img {
   display: block;
@@ -13,6 +14,8 @@
   margin-right: auto;
   justify-content: center;
   height: auto;
+  width: auto;
+  max-width: 40%;
 }
 .links {
   display: flex;
