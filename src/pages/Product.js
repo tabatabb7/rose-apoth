@@ -27,6 +27,14 @@ const product = [
       "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
     price: "20.00",
   },
+  {
+    id: 4,
+    imgURL: "../images/bodymilk.png",
+    name: "Unscented Bodymilk",
+    description:
+      "A powerful moisturizer that is absorbed into the skin instantly - no oily hands here. Vitamins A & E nourish and renew the skin.",
+    price: "20.00",
+  },
 ];
 
 function Product() {
