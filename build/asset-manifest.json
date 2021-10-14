@@ -1,26 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a828950.chunk.css",
-    "main.js": "/static/js/main.18a8cb8e.chunk.js",
-    "main.js.map": "/static/js/main.18a8cb8e.chunk.js.map",
+    "main.css": "/static/css/main.2914118e.chunk.css",
+    "main.js": "/static/js/main.fffc5b52.chunk.js",
+    "main.js.map": "/static/js/main.fffc5b52.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7704a690.js",
     "runtime-main.js.map": "/static/js/runtime-main.7704a690.js.map",
-    "static/js/2.592ad084.chunk.js": "/static/js/2.592ad084.chunk.js",
-    "static/js/2.592ad084.chunk.js.map": "/static/js/2.592ad084.chunk.js.map",
+    "static/js/2.3cdaf470.chunk.js": "/static/js/2.3cdaf470.chunk.js",
+    "static/js/2.3cdaf470.chunk.js.map": "/static/js/2.3cdaf470.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0a828950.chunk.css.map": "/static/css/main.0a828950.chunk.css.map",
-    "static/js/2.592ad084.chunk.js.LICENSE.txt": "/static/js/2.592ad084.chunk.js.LICENSE.txt",
-    "static/media/basket.9028790e.png": "/static/media/basket.9028790e.png",
-    "static/media/bodymilk.92b0a33a.png": "/static/media/bodymilk.92b0a33a.png",
-    "static/media/candle.f69595f2.png": "/static/media/candle.f69595f2.png",
-    "static/media/perfume.14b37d15.png": "/static/media/perfume.14b37d15.png",
-    "static/media/roseapothlogo.31170f50.png": "/static/media/roseapothlogo.31170f50.png",
-    "static/media/shop.872d7faa.png": "/static/media/shop.872d7faa.png"
+    "static/css/main.2914118e.chunk.css.map": "/static/css/main.2914118e.chunk.css.map",
+    "static/js/2.3cdaf470.chunk.js.LICENSE.txt": "/static/js/2.3cdaf470.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7704a690.js",
-    "static/js/2.592ad084.chunk.js",
-    "static/css/main.0a828950.chunk.css",
-    "static/js/main.18a8cb8e.chunk.js"
+    "static/js/2.3cdaf470.chunk.js",
+    "static/css/main.2914118e.chunk.css",
+    "static/js/main.fffc5b52.chunk.js"
   ]
 }
